@@ -67,6 +67,6 @@ services:
     depends_on:
       - vectordb
     expose:
-      - 8000
+      - ${RAG_PORT}
     env_file:
       - .env
