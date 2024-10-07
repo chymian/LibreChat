@@ -66,5 +66,7 @@ services:
     restart: always
     depends_on:
       - vectordb
+    expose:
+      - ${RAG_PORT}
     env_file:
       - .env
